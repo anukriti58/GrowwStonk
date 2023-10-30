@@ -79,7 +79,6 @@ export default function Graph({slug}: {slug: string}){
             return res.json();
         })
         .then((res)=>{
-            console.log(res);
             const result = parseResponse(graphFilter, res);
             if(result) setGraph(result);
             else setIserror(true);

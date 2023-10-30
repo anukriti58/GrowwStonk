@@ -5,7 +5,7 @@ export const SearchBar = () => {
     const [suggestions, setSuggestions] = useState([]);
   
     const handleSearch = (ev:ChangeEvent<HTMLInputElement>)=>{
-      fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${ev.target.value}&apikey=demo`)
+      fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${ev.target.value}&apikey=LFDXVYPALRS23ZH4`)
       .then((res) =>{
         return res.json();
       })
